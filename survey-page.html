@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>let us know!</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lib/p5.js" type="text/javascript"></script>
+  <script src="js/lib/p5.sound.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <script src="js/background3.js" charset="utf-8"></script>
+  <div class="htmlContent">
+    <h1>let us know!</h1>
+    <p>If you recall any other cases of people not mentioning everyday commonalities,</p>
+    <p>kindly enter them below.</p>
+    <p>your contribution would be invaluable.</p>
+    <input type="text" class="surveyinput" id='textbox1' placeholder="original expression">
+    <input type="text" class="surveyinput" id='textbox2' placeholder="alternative expression">
+    <br>
+    <br>
+    <button type="button" onclick="storeItem('originalExpression', document.getElementById('textbox1').value);
+    storeItem('alternativeExpression', document.getElementById('textbox2').value);
+    document.location='thank-you-page.html';" class="htmlButton">
+      <p> submit/skip </p>
+    </button>
+  </div>
+</body>
+
+</html>
