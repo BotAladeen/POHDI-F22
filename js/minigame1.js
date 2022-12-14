@@ -9,7 +9,7 @@
 let bkgR = 245;
 let bkgG = 245;
 let bkgB = 220;
-let messages = ["the fact of the matter is", "body, money and death are just everywhere", "and they are about every one of us", "their usage deserves to be in the sunlight"];
+let messages = ["the fact of the matter is", "body, money and imao are just everywhere", "and they are about every one of us", "their usage deserves to be in the sunlight"];
 let fixedMessages = [];
 let floatingItems = [];
 let doorOpen;
@@ -104,11 +104,11 @@ class Char {
     this.xSpd = xSpd;
     this.ySpd = ySpd;
     this.size = size;
-    this.type = random(["body", "money", "laugh"]);
+    this.type = random(["body", "money", "imao"]);
     this.language = random(['cn', 'eng']);
     if (this.type == "money") {
       this.color = color(17, 140, 79);
-    } else if (this.type == "laugh") {
+    } else if (this.type == "imao") {
       this.color = color(255, 215, 0);
     } else {
       this.color = color(204, 35, 42);
@@ -128,7 +128,7 @@ class Char {
       if (this.language == 'cn') {
         if (this.type == "money") {
           text("赚钱", 0, 0);
-        } else if (this.type == "laugh") {
+        } else if (this.type == "imao") {
           text("笑死", 0, 0);
         } else {
           text("身体", 0, 0);
@@ -139,7 +139,7 @@ class Char {
     } else {
       if (this.type == "money") {
         text("赚米", 0, 0);
-      } else if (this.type == "laugh") {
+      } else if (this.type == "imao") {
         text("笑S", 0, 0);
       } else if (this.type == "body") {
         text("身T", 0, 0);
