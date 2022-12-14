@@ -52,7 +52,7 @@ class Char {
       text("赚大钱", 0, 0);
     } else if (this.type == "death") {
       fill("Gold");
-      text("笑不死你", 0, 0);
+      text("你笑不死", 0, 0);
     } else if (this.type == "body") {
       fill(204, 35, 42);
       text("注意身体", 0, 0);
