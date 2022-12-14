@@ -9,7 +9,7 @@
 let bkgR = 245;
 let bkgG = 245;
 let bkgB = 220;
-let messages = ["the fact of the matter is", "body, money and imao are just everywhere", "and they are about every one of us", "their usage deserves to be in the sunlight"];
+let messages = ["the fact of the matter is", "body, money and laughter are just everywhere", "and they are about every one of us", "their usage deserves to be in the sunlight"];
 let fixedMessages = [];
 let floatingItems = [];
 let doorOpen;
