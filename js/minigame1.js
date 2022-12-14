@@ -75,6 +75,20 @@ function draw() {
   drawPerson(mouseX, mouseY);
 }
 
+function keyPressed() {
+  if (key == ' ') {
+    for (i = 0; i < floatingItems.length; i++) {
+      let f = floatingItems[i];
+      f.censored = true;
+      f.greeting = "boo!!"
+      f.color = color(45);
+      bkgR -= 4.9;
+      bkgG -= 4.9;
+      bkgB -= 4.4;
+    }
+  }
+}
+
 class Message {
   constructor(x, y, size, message, rotation) {
     this.x = x;
